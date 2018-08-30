@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <ion-fab right bottom>
+    <button ion-fab mini (click)="nextPage()"><ion-icon name="add" ></ion-icon></button>
+  </ion-fab>
+  <ion-list *ngFor="let a of itemList">
+    <ion-item (click)="alert(a.key)">{{a.item}} {{a.key}}</ion-item>
+  </ion-list>
+</ion-content>
